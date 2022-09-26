@@ -50,7 +50,7 @@ spec:
       - env:
         - name: JAVA_TOOL_OPTIONS
           value: -Dmanagement.endpoint.health.probes.add-additional-paths="true" -Dmanagement.endpoint.health.show-details=always -Dmanagement.endpoints.web.base-path="/actuator" -Dmanagement.endpoints.web.exposure.include=* -Dmanagement.health.probes.enabled="true" -Dmanagement.server.port="8081" -Dserver.port="8080" -Dserver.shutdown.grace-period="24s"
-        image: gcr.io/rawlingsj/gevans-petclinic1-dev@sha256:3c88302bfeabf18974f427f7c29f7f33db83f6c28a5b034210883d89ec6d1a52
+        image: gcr.io/rawlingsj/gevans-petclinic1-dev@sha256:b3af9a07971fcf56615552ba7d5e9e6e448b51d68ea782f0a63f11962bd59d5f
         livenessProbe:
           httpGet:
             path: /livez
